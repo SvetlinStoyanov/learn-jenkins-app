@@ -29,7 +29,7 @@ pipeline {
                 steps{
                     sh '''
                     ls -la
-                    test -f 
+                    test -f 'build/index.html'
                     npm run build
                     ls -la 
                     '''
