@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             agent{
                 docker{
-                    image 'node18:alpine'
+                    image 'node:18-alpine'
                 }
             }
             steps {
@@ -22,7 +22,7 @@ pipeline {
         stage('Build'){
             agent{
                 docker{
-                    image 'node18:alpine'
+                    image 'node:18-alpine'
                 }
             }
                 steps{
