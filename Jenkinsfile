@@ -30,7 +30,6 @@ pipeline {
                     sh '''
                     ls -la
                     test -f 
-                    image 'node18:alpine'
                     npm run build
                     ls -la 
                     '''
